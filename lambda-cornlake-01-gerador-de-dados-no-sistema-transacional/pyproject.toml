@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "lambda-cornlake-01-gerador-de-dados-no-sistema-transacional"
+version = "0.1.0"
+description = ""
+authors = ["Guilherme S. Magalhaes <silcol455@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+pandas = "^2.1.4"
+faker = "^21.0.0"
+faker-food = "^0.3.0"
+sqlalchemy = "^2.0.24"
+python-dotenv = "^1.0.0"
+psycopg2-binary = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

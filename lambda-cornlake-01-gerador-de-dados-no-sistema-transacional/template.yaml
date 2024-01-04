@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  lambda_cornlake_01_gerador_de_dados_no_sistema_transacional
+
+  Gerador de dados do sistema transacional que é utilizado como origem para o CornLake.
+
+Resources:
+  DataGenerator:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: DataGenerator/
+      Handler: app.main
+      Runtime: python3.10
+      Timeout: 900
+      Architectures:
+        - x86_64
+      Environment:
+        Variables:
+          SQLALCHEMY_POSTGRES_CONN: postgresql://postgres:postgres@172.17.0.2:5432/postgres

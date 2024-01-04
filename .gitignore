@@ -1,0 +1,5 @@
+.vscode
+.aws-sam
+__pycache__
+
+.env
