@@ -17,4 +17,4 @@ Resources:
         - x86_64
       Environment:
         Variables:
-          SQLALCHEMY_POSTGRES_CONN: 
+          SQLALCHEMY_POSTGRES_CONN: postgresql://postgres:postgres@172.17.0.2:5432/postgres
